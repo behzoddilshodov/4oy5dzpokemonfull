@@ -1,0 +1,36 @@
+.body{
+  font-family: "Ninja Naruto";
+  background-color:rgb(255, 216, 143)
+}
+
+.card:hover{
+  transform: scale(1.1);
+  transition: 1s;
+  /* border: 3px solid yellow; */
+  /* box-shadow: 0 0 80px -10px plum; */
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+  box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+
+.card:hover .card-title{
+  font-size: 30px;
+  background: -webkit-linear-gradient(rgb(52, 2, 255), rgb(53, 8, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card{
+  background-color:ivory;
+  
+}
+
+
+
+
+
+

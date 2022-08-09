@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link href="//db.onlinewebfonts.com/c/73fedd912ba11f583a359ce4c2e742ed?family=Ninja+Naruto" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<title>huyna</title>
+</head>
+<body class="body">
+
+	<header class="header">
+		<div class="container">
+		</div>
+	</header>
+
+		<main>
+			<section class="hero"> 
+				<div class="container d-flex flex-column justify-content-center justify-content-lg-start pt-5">
+					<h2 class="text-center mb-5">
+						Movies catalog
+					</h2>
+					<div class="row d-flex flex-lg-row flex-column ">
+						<div class="col-12 col-lg-4 d-flex flex-column justify-content-center justify-content-lg-start pe-lg-5 mb-3 mb-lg-0">
+							<form id="form"  class="d-flex flex-column gap-3 mb-4 search__form" action="https://echo.htmlacademy.ru/">
+								<input class="form-control name" type="text" placeholder="name">
+
+								<input class="form-control form__height" type="number" name="height"  placeholder="height">
+
+                <input class="form-control form__weight" type="number" name="weight"   placeholder="weight">
+
+								<div class="input-group">
+									<select class="form-select form__type" name="categories" id="selects">
+										<option value="all" selected>All</option>
+									</select>
+								</div>
+
+								<div class="input-group">
+									<select class="form-select form__sorting" name="sorting" id="inputGroupSelect01">
+										<option value="weighthighlow" selected>Weight (high to low)</option>
+										<option value="weightlowtohigh">Weight (low to high)</option>
+										<option value="heighthighlow">Height (high to low)</option>
+										<option value="heightlowhigh">Height (low to high)</option>
+									</select>
+								</div>
+
+								<button class="btn bg-primary text-white">Search</button>
+							</form>
+							<h2 class="">Bookmarked pokemon</h2>
+							<div class="border border-1 p-3 border-secondary border-opacity-50 rounded-top">
+								<p class="h5">Avenger: Infinity War <span class="fw-normal badge bg-danger py-2 d-block w-25 mt-2">Remove</span></p>
+							</div>						
+							<div class="border border-1 p-3 border-secondary border-opacity-50">
+								<p class="h5">The Avengers <span class="fw-normal badge bg-danger py-2 d-block w-25 mt-2">Remove</span></p>
+							</div>						
+							<div class="border border-1 p-3 border-secondary rounded-bottom border-opacity-50">
+								<p class="h5">12 Years a Slave <span class="fw-normal badge bg-danger py-2 d-block w-25 mt-2">Remove</span></p>
+							</div>
+						</div>
+						<div class="col-12 col-lg-8 d-flex flex-column">
+							<h2 class="h4">Search results: <span id="results">0</span></h2>
+							<div class="alert alert-primary" role="alert">
+								Use the form on the left  to search for pokemon character
+							</div>
+							<div class="row movie__wrapper d-flex flex-column flex-lg-row">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>        
+		</main>
+
+		<template id="movie_card">
+			<div class="col-12 col-lg-6 p-3">
+				<div class="card">
+					<img src="./images/21019319_993223.jpg" style="object-fit:	contain;" width="406" height="228" class="card-img-top movie__img" alt="...">
+					<div class="card-body">
+						<h5 class="card-title h4 mb-2 movie__title text-nowrap overflow-hidden">John Wick 2</h5>
+						<div class="d-flex mb-2">
+							<p class="pokemon__height"></p>
+						</div>
+						<div class="d-flex">
+							<p class="pokemon__weight"></p>
+						</div>
+						<div>
+							<p class="pokemon__type"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</template>  
+
+
+		<script src="./js/pokemon.js"></script>
+		<script src="./js/bootstrap.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+	</html>
+
